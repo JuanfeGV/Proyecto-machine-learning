@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Flask</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-    <h1>Welcome to {{ name }}</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+<div class="text-center">
+    <h1 class="mb-3">Bienvenido a las actividades de ML</h1>
+    <p class="lead">Selecciona una actividad del menú superior.</p>
+</div>
+{% endblock %}
+
